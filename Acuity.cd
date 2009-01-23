@@ -1,0 +1,522 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="MetaphysicsIndustries.Acuity.AdvancedConvolutionMatrixFilter" Collapsed="true">
+    <Position X="5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>AdvancedConvolutionMatrixFilter.cs</FileName>
+      <HashCode>AAgAAAAAABAAAAACAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.AlphaTrimmedDualBellEdgeDetectorMatrixFilter" Collapsed="true">
+    <Position X="49" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>AlphaTrimmedDualBellEdgeDetectorMatrixFilter.cs</FileName>
+      <HashCode>AAAAAAAAAEAAAAAEAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.AlphaTrimmedMeanMatrixFilter" Collapsed="true">
+    <Position X="40" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>AlphaTrimmedMeanMatrixFilter.cs</FileName>
+      <HashCode>AAAAAAAAAEAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.AlphaTrimmedMmseMatrixFilter" Collapsed="true">
+    <Position X="55.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>AlphaTrimmedMmseMatrixFilter.cs</FileName>
+      <HashCode>AAEAAAAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.AlphaTrimmedMmsePlusAtmMatrixFilter" Collapsed="true">
+    <Position X="55.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>AlphaTrimmedMmsePlusAtmMatrixFilter.cs</FileName>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.ArithmeticMeanFilter" Collapsed="true">
+    <Position X="15.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ArithmeticMeanFilter.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.AtmImpulseRejectionStageMatrixFilter" Collapsed="true">
+    <Position X="51.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>AtmImpulseRejectionStageMatrixFilter.cs</FileName>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.BiModulatorMatrixFilter" Collapsed="true">
+    <Position X="71.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>BiModulatorMatrixFilter.cs</FileName>
+      <HashCode>AAAAAAAAABAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.CenteredCoordinateTransformMatrixFilter" Collapsed="true">
+    <Position X="28.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>CenteredCoordinateTransformMatrixFilter.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAABAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.ChainMatrixFilter" Collapsed="true">
+    <Position X="8.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>CompositeMatrixFilter.cs</FileName>
+      <HashCode>AAAAAAAAABEAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.ConvolutionMatrixFilter" Collapsed="true">
+    <Position X="14" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ConvolutionMatrixFilter.cs</FileName>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.ConvolutionVectorFilter" Collapsed="true">
+    <Position X="6" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ConvolutionVectorFilter.cs</FileName>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.CoordinateTransformMatrixFilter" Collapsed="true">
+    <Position X="28.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>CoordinateTransformMatrixFilter.cs</FileName>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.DualBellEdgeDetectorMatrixFilter" Collapsed="true">
+    <Position X="49" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>DualBellEdgeDetectorMatrixFilter.cs</FileName>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.ExpandEdgeMatrixFilter" Collapsed="true">
+    <Position X="69.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ExpandEdgeMatrixFilter.cs</FileName>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAEBAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.ExponentMatrixFilter" Collapsed="true">
+    <Position X="82.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ExponentMatrixFilter.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAQAABAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.FishEyeMatrixFilter" Collapsed="true">
+    <Position X="31" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>FishEyeMatrixFilter.cs</FileName>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.FourierTransformMatrixFilter" Collapsed="true">
+    <Position X="78.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>FourierTransformMatrixFilter.cs</FileName>
+      <HashCode>AAAAAAAAABAAAAAAACAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.FourierTransformVectorFilter" Collapsed="true">
+    <Position X="0.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>FourierTransformVectorFilter.cs</FileName>
+      <HashCode>AAAAAAAAABAAABAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.GaussianBlurMatrixFilter" Collapsed="true">
+    <Position X="10.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>GaussianBlurMatrixFilter.cs</FileName>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.GaussianNoiseMatrixFilter" Collapsed="true">
+    <Position X="24.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>GaussianNoiseMatrixFilter.cs</FileName>
+      <HashCode>AAAAAAAAABAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.GaussianNoiseVectorFilter" Collapsed="true">
+    <Position X="9.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>GaussianNoiseVectorFilter.cs</FileName>
+      <HashCode>AAAAAAAAABAAAAAACAAAAAAACAAAAAAAAAAAAgAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.GeometricMeanMatrixFilter" Collapsed="true">
+    <Position X="35.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>GeometricMeanMatrixFilter.cs</FileName>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.GreaterThanOrEqualComparisonOperation" Collapsed="true">
+    <Position X="87.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>GreaterThanOrEqualComparisonOperation.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.HighPassVectorFilter" Collapsed="true">
+    <Position X="7.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HighPassVectorFilter.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.HistogramMatrixFilter" Collapsed="true">
+    <Position X="73.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HistogramMatrixFilter.cs</FileName>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.IdentityFilter" Collapsed="true">
+    <Position X="80.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>IdentityFilter.cs</FileName>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.ImpulseNoiseMatrixFilter" Collapsed="true">
+    <Position X="76" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ImpulseNoiseMatrixFilter.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.IntervalFitBaseMatrixFilter" Collapsed="true">
+    <Position X="19.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>IntervalFitBaseMatrixFilter.cs</FileName>
+      <HashCode>AAAAAAAAABAAAAAAEAAAAAAAAAAAAAAEEABAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.IntervalFitMatrixFilter" Collapsed="true">
+    <Position X="19.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>IntervalFitMatrixFilter.cs</FileName>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.InverseFourierTransformMatrixFilter" Collapsed="true">
+    <Position X="78.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>InverseFourierTransformMatrixFilter.cs</FileName>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.InverseFourierTransformVectorFilter" Collapsed="true">
+    <Position X="0.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>InverseFourierTransformVectorFilter.cs</FileName>
+      <HashCode>AAAAAAAAAAAAABAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.LowPassVectorFilter" Collapsed="true">
+    <Position X="5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>LowPassVectorFilter.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.Matrix" Collapsed="true">
+    <Position X="89.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Matrix.cs</FileName>
+      <HashCode>ABAAwECAAAACABAACAAAACQAQAAAAAAILQAAAAIAAhQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.MatrixFilter" Collapsed="true">
+    <Position X="44.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>MatrixFilter.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.MaxMinMatrixFilter" Collapsed="true">
+    <Position X="4" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>MaxMinMatrixFilter.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.MedianMatrixFilter" Collapsed="true">
+    <Position X="42.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>MedianFilter.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.MedianMmseMatrixFilter" Collapsed="true">
+    <Position X="53.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>MedianMmseMatrixFilter.cs</FileName>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.MedianVectorFilter" Collapsed="true">
+    <Position X="11.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>MedianVectorFilter.cs</FileName>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAEAAABAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.MinimalMeanSquareErrorMatrixFilter" Collapsed="true">
+    <Position X="59" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>MinimalMeanSquareErrorMatrixFilter.cs</FileName>
+      <HashCode>AAAQKAAACAgBAAAAAAAAAAAAAAAAAAAAAYBAAAAAAEA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.MinMaxMatrixFilter" Collapsed="true">
+    <Position X="6.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>MinMaxMatrixFilter.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.MmseEdgeDetectionMatrixfilter" Collapsed="true">
+    <Position X="58" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>MmseEdgeDetectionMatrixfilter.cs</FileName>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAABAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.MmsePlusAtmMatrixFilter" Collapsed="true">
+    <Position X="60.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>MmsePlusAtmMatrixFilter.cs</FileName>
+      <HashCode>AAAAIAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.ModulatorMatrixFilter" Collapsed="true">
+    <Position X="82.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ModulatorMatrixFilter.cs</FileName>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.MovingAverageVectorFilter" Collapsed="true">
+    <Position X="5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>MovingAverageVectorFilter.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.OrderStatisticMatrixFilter" Collapsed="true">
+    <Position X="45.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>OrderStatisticMatrixFilter.cs</FileName>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAYBAAAAAAQA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.OrderStatisticMmseMatrixFilter" Collapsed="true">
+    <Position X="54.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>OrderStatisticMmseMatrixFilter.cs</FileName>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.PolarCoordinateTransformMatrixFilter" Collapsed="true">
+    <Position X="28.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>PolarCoordinateTransformMatrixFilter.cs</FileName>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAQAAAEAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.PrewittHorizontalMatrixFilter" Collapsed="true">
+    <Position X="13" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>PrewittHorizontalMatrixFilter.cs</FileName>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.PrewittVerticalMatrixFilter" Collapsed="true">
+    <Position X="17.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>PrewittVerticalMatrixFilter.cs</FileName>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.RotateCoordinatesMatrixFilter" Collapsed="true">
+    <Position X="28.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>RotateCoordinatesMatrixFilter.cs</FileName>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAAEAAAAAAEAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.SaltAndPepperNoiseMatrixFilter" Collapsed="true">
+    <Position X="76" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>SaltAndPepperNoiseMatrixFilter.cs</FileName>
+      <HashCode>AAAAAAAAABQAAAEAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.SimpleScaleMatrixFilter" Collapsed="true">
+    <Position X="85" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>SimpleScaleMatrixFilter.cs</FileName>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.SineWaveGeneratorVectorFilter" Collapsed="true">
+    <Position X="2.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>SineWaveGeneratorVectorFilter.cs</FileName>
+      <HashCode>AAAAAAAAABABAAAAAAAQAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.SobelMatrixFilter" Collapsed="true">
+    <Position X="22" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>SobelMatrixFilter.cs</FileName>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAEgIAAAAAAABAAAEAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.SwirlMatrixFilter" Collapsed="true">
+    <Position X="26.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>SwirlMatrixFilter.cs</FileName>
+      <HashCode>AAAAAABAAAABAABAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.ThresholdMatrixFilter" Collapsed="true">
+    <Position X="33.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ThresholdMatrixFilter.cs</FileName>
+      <HashCode>AAAAAAAAABAAAAAAgAAAAAAAAAAAAAAAAAggAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.TriModulatorMatrixFilter" Collapsed="true">
+    <Position X="37.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TriModulatorMatrixFilter.cs</FileName>
+      <HashCode>AAAAAAAAABAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.VariableRotateCoordinatesMatrixFilter" Collapsed="true">
+    <Position X="28.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>VariableRotateCoordinatesMatrixFilter.cs</FileName>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAEAAgAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.VariableSwirlMatrixFilter" Collapsed="true">
+    <Position X="26.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>VariableSwirlMatrixFilter.cs</FileName>
+      <HashCode>AAAAAABAAAEAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.Vector" Collapsed="true">
+    <Position X="87.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Vector.cs</FileName>
+      <HashCode>ABAAAAAAAAACABAADAAAAABAAAAAAAAAJAAAAAIAABQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.VectorFilter" Collapsed="true">
+    <Position X="6" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>VectorFilter.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.VectorFilters" Collapsed="true">
+    <Position X="89.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>VectorFilters.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.WeightedMedianVectorFilter" Collapsed="true">
+    <Position X="11.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>WeightedMedianFilter.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.WeightedMedianMatrixFilter" Collapsed="true">
+    <Position X="42.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>WeightedMedianMatrixFilter.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.WeightedPMatrixFilter" Collapsed="true">
+    <Position X="44.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>WeightedPMatrixFilter.cs</FileName>
+      <HashCode>IAAAAAAAAEAAAAAAAAAAAAABAAAAAAAAAIAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.WindowedMatrixFilter" Collapsed="true">
+    <Position X="53.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>WindowedMatrixFilter.cs</FileName>
+      <HashCode>QAAQAAAAABAAAAAAAAAAAAAAAACAAAAAAQAEAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.WindowMaxMatrixFilter" Collapsed="true">
+    <Position X="44.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>WindowMaxMatrixFilter.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.WindowMinMatrixFilter" Collapsed="true">
+    <Position X="46.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>WindowMinMatrixFilter.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.ZetaTrimmedMeanMatrixFilter" Collapsed="true">
+    <Position X="67" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ZetaTrimmedMeanMatrixFilter.cs</FileName>
+      <HashCode>AAAAAAAACAAQAAAAAAAAAAAAAAAAAAAAAQAAABAAAEA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.ZetaTrimmedMmseMatrixFilter" Collapsed="true">
+    <Position X="63.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ZetaTrimmedMmseMatrixFilter.cs</FileName>
+      <HashCode>AAAAIAAAAAAAAIAAAAAAAgQAgAAAAAAAAQAAABAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.ZetaTrimmedMmsePlusAtmMatrixFilter" Collapsed="true">
+    <Position X="62.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ZetaTrimmedMmsePlusAtmMatrixFilter.cs</FileName>
+      <HashCode>AAAAIAAAAAAAAAAEAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetaphysicsIndustries.Acuity.ZetaTrimmedMmsePlusZtmMatrixFilter" Collapsed="true">
+    <Position X="64.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ZetaTrimmedMmsePlusZtmMatrixFilter.cs</FileName>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="MetaphysicsIndustries.Acuity.IPerPixelOperator" Collapsed="true">
+    <Position X="87.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>IPerPixelOperator.cs</FileName>
+      <HashCode>AAAAAAAAEAAAAgAAAAAAAAAAAAAAAAAIAAAAgAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+</ClassDiagram>
