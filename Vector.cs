@@ -88,7 +88,7 @@ namespace MetaphysicsIndustries.Acuity
 
         public Vector Convolution(Vector convolvee)
         {
-            return AdvancedConvolution(convolvee, AssociativeCommutativeOperation.Multiplication, AssociativeCommutativeOperation.Addition);
+            return AdvancedConvolution(convolvee, MultiplicationOperation.Value, AdditionOperation.Value);
         }
 
         public Vector AdvancedConvolution(Vector convolvee, Operation firstOp, AssociativeCommutativeOperation secondOp)
