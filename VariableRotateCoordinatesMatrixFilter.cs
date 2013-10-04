@@ -8,7 +8,7 @@ namespace MetaphysicsIndustries.Acuity
     [Serializable]
     public class VariableRotateCoordinatesMatrixFilter : RotateCoordinatesMatrixFilter
     {
-        public VariableRotateCoordinatesMatrixFilter(VariableTable varTable, string variable)
+        public VariableRotateCoordinatesMatrixFilter(Dictionary<string, Expression> varTable, string variable)
             : base(0)
         {
             if (varTable == null) { throw new ArgumentNullException("varTable"); }
@@ -18,7 +18,7 @@ namespace MetaphysicsIndustries.Acuity
             _variable = variable;
         }
 
-        private VariableTable _varTable;
+        private Dictionary<string, Expression> _varTable;
         private string _variable;
 
         public override float Angle
