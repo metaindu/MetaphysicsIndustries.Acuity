@@ -8,7 +8,7 @@ namespace MetaphysicsIndustries.Acuity
     [Serializable]
     public class VariableSwirlMatrixFilter : SwirlMatrixFilter
     {
-        public VariableSwirlMatrixFilter(VariableTable varTable, Variable variable)
+        public VariableSwirlMatrixFilter(VariableTable varTable, string variable)
             : base(0)
         {
             if (varTable == null) { throw new ArgumentNullException("varTable"); }
@@ -19,7 +19,7 @@ namespace MetaphysicsIndustries.Acuity
         }
 
         private VariableTable _varTable;
-        private Variable _variable;
+        private string _variable;
 
         public override float Factor
         {
