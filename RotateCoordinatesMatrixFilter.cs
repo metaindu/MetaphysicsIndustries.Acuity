@@ -1,7 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using MetaphysicsIndustries.Collections;
+using MetaphysicsIndustries.Solus;
+
 
 namespace MetaphysicsIndustries.Acuity
 {
@@ -39,9 +40,9 @@ namespace MetaphysicsIndustries.Acuity
         //    return new Pair<float>(x, y);
         //}
 
-        protected override Pair<float> InternalModulate2(Pair<float> pair)
+        protected override STuple<float, float> InternalModulate2(STuple<float, float> pair)
         {
-            pair.Second += Angle;
+            pair.Value2 += Angle;
             return pair;
         }
     }

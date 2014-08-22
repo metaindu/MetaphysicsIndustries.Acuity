@@ -1,7 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using MetaphysicsIndustries.Collections;
+using MetaphysicsIndustries.Solus;
+
 
 namespace MetaphysicsIndustries.Acuity
 {
@@ -50,17 +51,17 @@ namespace MetaphysicsIndustries.Acuity
 
         public override Vector Apply(Vector input)
         {
-            Pair<Vector> output = Apply2(input);
+            var output = Apply2(input);
             int i;
             for (i = 0; i < input.Length; i++)
             {
-                output.First[i] =
+                output.Value1[i] =
                     (float)Math.Sqrt(
-                        output.First[i] * output.First[i] +
-                        output.Second[i] * output.Second[i]);
+                        output.Value1[i] * output.Value1[i] +
+                        output.Value2[i] * output.Value2[i]);
             }
 
-            return output.First;
+            return output.Value1;
         }
 
         protected virtual float ScaleForInverse(float x, int length)
@@ -68,15 +69,15 @@ namespace MetaphysicsIndustries.Acuity
             return x;
         }
 
-        public virtual Pair<Vector> Apply2(Vector input)
+        public virtual STuple<Vector, Vector> Apply2(Vector input)
         {
-            return Apply2(new Pair<Vector>(input, null));
+            return Apply2(new STuple<Vector, Vector>(input, null));
         }
 
-        public virtual Pair<Vector> Apply2(Pair<Vector> input)
+        public virtual STuple<Vector, Vector> Apply2(STuple<Vector, Vector> input)
         {
-            Vector inputReal2 = input.First;
-            Vector inputImag2 = input.Second;
+            Vector inputReal2 = input.Value1;
+            Vector inputImag2 = input.Value2;
 
             if (inputImag2 == null) { inputImag2 = new Vector(inputReal2.Length); }
 
@@ -90,7 +91,7 @@ namespace MetaphysicsIndustries.Acuity
 
             dft(inputReal, inputImag, outputReal, outputImaginary);
 
-            return new Pair<Vector>(outputReal2, outputImaginary2);
+            return new STuple<Vector, Vector>(outputReal2, outputImaginary2);
         }
 
         public void dft(IArrayReadable<float> inputReal, IArrayReadable<float> inputImag, IArrayWriteable<float> outputReal, IArrayWriteable<float> outputImaginary)

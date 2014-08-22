@@ -1,7 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using MetaphysicsIndustries.Collections;
+using MetaphysicsIndustries.Solus;
+
 
 namespace MetaphysicsIndustries.Acuity
 {
@@ -15,18 +16,18 @@ namespace MetaphysicsIndustries.Acuity
 
         public override Matrix Apply(Matrix input)
         {
-            Pair<float> ret;
+            STuple<float, float> ret;
 
             ret = CalcInterval(input);
 
-            Min = ret.First;
-            Max = ret.Second;
+            Min = ret.Value1;
+            Max = ret.Value2;
 
             //accumulate & fire
             return base.Apply(input);
         }
 
-        public static Pair<float> CalcInterval(Matrix input)
+        public static STuple<float, float> CalcInterval(Matrix input)
         {
             int i;
             int j;
@@ -51,7 +52,7 @@ namespace MetaphysicsIndustries.Acuity
                 }
             }
 
-            return new Pair<float>(min, max);
+            return new STuple<float, float>(min, max);
         }
 
     }

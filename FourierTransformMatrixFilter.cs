@@ -1,7 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using MetaphysicsIndustries.Collections;
+using MetaphysicsIndustries.Solus;
+
 
 namespace MetaphysicsIndustries.Acuity
 {
@@ -36,7 +37,7 @@ namespace MetaphysicsIndustries.Acuity
 
             //e^(i*theta) = cos(theta) + i*sin(theta)
 
-            return Apply2(input).First;
+            return Apply2(input).Value1;
 
 
 
@@ -116,15 +117,15 @@ namespace MetaphysicsIndustries.Acuity
             return new FourierTransformVectorFilter();
         }
 
-        public  Pair<Matrix> Apply2(Matrix input)
+        public  STuple<Matrix, Matrix> Apply2(Matrix input)
         {
-            return Apply2(new Pair<Matrix>(input, null));
+            return Apply2(new STuple<Matrix, Matrix>(input, null));
         }
 
-        public virtual Pair<Matrix> Apply2(Pair<Matrix> input)
+        public virtual STuple<Matrix, Matrix> Apply2(STuple<Matrix, Matrix> input)
         {
-            Matrix inputReal = input.First;
-            Matrix inputImag = input.Second;
+            Matrix inputReal = input.Value1;
+            Matrix inputImag = input.Value2;
 
             if (inputImag == null) { inputImag = new Matrix(inputReal.RowCount, inputReal.ColumnCount); }
 
@@ -134,7 +135,7 @@ namespace MetaphysicsIndustries.Acuity
 
             Dft2D(inputReal, inputImag, outputReal, outputImaginary);
 
-            return new Pair<Matrix>(outputReal, outputImaginary);
+            return new STuple<Matrix, Matrix>(outputReal, outputImaginary);
         }
 
         private void Dft2D(Matrix inputReal, Matrix inputImag, Matrix outputReal, Matrix outputImaginary)

@@ -1,7 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using MetaphysicsIndustries.Collections;
+using MetaphysicsIndustries.Solus;
+
 
 namespace MetaphysicsIndustries.Acuity
 {
@@ -28,23 +29,23 @@ namespace MetaphysicsIndustries.Acuity
         //{
         //    Pair<float> pair = SolusEngine.ConvertZeroOneToNegOneOne(x, y);
         //
-        //    pair = SolusEngine.ConvertEuclideanToPolar(pair.First, pair.Second);
+        //    pair = SolusEngine.ConvertEuclideanToPolar(pair.Value1, pair.Value2);
         //
-        //    if (pair.First >= -1 && pair.First <= 1)
+        //    if (pair.Value1 >= -1 && pair.Value1 <= 1)
         //    {
-        //        pair.Second += (1 - pair.First) * factor;
+        //        pair.Value2 += (1 - pair.Value1) * factor;
         //    }
         //
-        //    pair = SolusEngine.ConvertPolarToEuclidean(pair.First, pair.Second);
+        //    pair = SolusEngine.ConvertPolarToEuclidean(pair.Value1, pair.Value2);
         //
-        //    pair = SolusEngine.ConvertNegOneOneToZeroOne(pair.First, pair.Second);
+        //    pair = SolusEngine.ConvertNegOneOneToZeroOne(pair.Value1, pair.Value2);
         //
         //    return pair;
         //}
 
-        protected override bool CheckCoordinates(Pair<float> pair)
+        protected override bool CheckCoordinates(STuple<float, float> pair)
         {
-            if (pair.First >= -1 && pair.First <= 1)
+            if (pair.Value1 >= -1 && pair.Value1 <= 1)
             {
                 return true;
             }
@@ -52,9 +53,9 @@ namespace MetaphysicsIndustries.Acuity
             return false;
         }
 
-        protected override Pair<float> InternalModulate2(Pair<float> pair)
+        protected override STuple<float, float> InternalModulate2(STuple<float, float> pair)
         {
-            pair.Second += (1 - pair.First) * Factor;
+            pair.Value2 += (1 - pair.Value1) * Factor;
 
             return pair;
         }

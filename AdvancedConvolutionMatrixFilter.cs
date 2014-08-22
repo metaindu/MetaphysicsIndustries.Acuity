@@ -7,22 +7,22 @@ namespace MetaphysicsIndustries.Acuity
     [Serializable]
     public class AdvancedConvolutionMatrixFilter : MatrixFilter
     {
-        public AdvancedConvolutionMatrixFilter(Matrix convolutionKernal, BiModulator firstOp, BiModulator secondOp)
+        public AdvancedConvolutionMatrixFilter(Matrix convolutionKernal, BiModulator Value1Op, BiModulator Value2Op)
         {
             if (convolutionKernal == null) { throw new ArgumentNullException("convolutionKernal"); }
 
             _convolutionKernal = convolutionKernal;
-            _firstOp = firstOp;
-            _secondOp = secondOp;
+            _Value1Op = Value1Op;
+            _Value2Op = Value2Op;
         }
 
         Matrix _convolutionKernal;
-        BiModulator _firstOp;
-        BiModulator _secondOp;
+        BiModulator _Value1Op;
+        BiModulator _Value2Op;
 
         public override Matrix Apply(Matrix input)
         {
-            return input.AdvancedConvolution(_convolutionKernal, _firstOp, _secondOp);
+            return input.AdvancedConvolution(_convolutionKernal, _Value1Op, _Value2Op);
         }
     }
 }

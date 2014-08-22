@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using MetaphysicsIndustries.Solus;
-using MetaphysicsIndustries.Collections;
+
 
 namespace MetaphysicsIndustries.Acuity
 {
@@ -91,7 +91,7 @@ namespace MetaphysicsIndustries.Acuity
             return AdvancedConvolution(convolvee, MultiplicationOperation.Value, AdditionOperation.Value);
         }
 
-        public Vector AdvancedConvolution(Vector convolvee, Operation firstOp, AssociativeCommutativeOperation secondOp)
+        public Vector AdvancedConvolution(Vector convolvee, Operation Value1Op, AssociativeCommutativeOperation Value2Op)
         {
             int r = Length + convolvee.Length - 1;
 

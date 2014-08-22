@@ -7,7 +7,7 @@ namespace MetaphysicsIndustries.Acuity
     [Serializable]
     public class ZetaTrimmedMmsePlusZtmMatrixFilter : ZetaTrimmedMmseMatrixFilter
     {
-        public ZetaTrimmedMmsePlusZtmMatrixFilter(int windowSize, float noiseVariance, float zeta)//, float secondZeta)
+        public ZetaTrimmedMmsePlusZtmMatrixFilter(int windowSize, float noiseVariance, float zeta)//, float Value2Zeta)
             : base(windowSize, noiseVariance, zeta)
         {
         }

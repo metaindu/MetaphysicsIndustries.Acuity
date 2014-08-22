@@ -13,10 +13,11 @@
 
 using System;
 using System.Collections.Generic;
-using MetaphysicsIndustries.Collections;
+
 using System.Diagnostics;
 //using System.Drawing;
 //using MetaphysicsIndustries.Utilities;
+using MetaphysicsIndustries.Solus;
 
 namespace MetaphysicsIndustries.Acuity
 {
@@ -97,18 +98,18 @@ namespace MetaphysicsIndustries.Acuity
                         variance2 * mean1 * mean1 - 
                         variance1 * variance2 * System.Math.Log(System.Math.Sqrt(variance1 / variance2)));
 
-            Pair<float> x = QuadraticEquation(a, b, c);
+            STuple<float, float> x = QuadraticEquation(a, b, c);
 
             return 0;
         }
 
-        public static Pair<float> QuadraticEquation(float a, float b, float c)
+        public static STuple<float, float> QuadraticEquation(float a, float b, float c)
         {
             float d = (float)System.Math.Sqrt(b * b - 4 * a * c);
             float x1 = (-b + d) / (2 * a);
             float x2 = (-b - d) / (2 * a);
 
-            return new Pair<float>(x1, x2);
+            return new STuple<float, float>(x1, x2);
         }
 
         public static float CalculateGeometricMean(IEnumerable<float> measures)

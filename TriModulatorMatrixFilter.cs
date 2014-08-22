@@ -1,7 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using MetaphysicsIndustries.Collections;
+using MetaphysicsIndustries.Solus;
+
 
 namespace MetaphysicsIndustries.Acuity
 {
@@ -17,25 +18,25 @@ namespace MetaphysicsIndustries.Acuity
 
         public override Matrix Apply(Matrix input)
         {
-            return Apply3(new Triple<Matrix>(input, input, input));
+            return Apply3(new STuple<Matrix, Matrix, Matrix>(input, input, input));
         }
 
-        public Matrix Apply3(Triple<Matrix> input)
+        public Matrix Apply3(STuple<Matrix, Matrix, Matrix> input)
         {
             int i;
             int j;
 
-            Matrix output = input.First.CloneSize();
+            Matrix output = input.Value1.CloneSize();
 
-            for (i = 0; i < input.First.RowCount; i++)
+            for (i = 0; i < input.Value1.RowCount; i++)
             {
-                for (j = 0; j < input.First.ColumnCount; j++)
+                for (j = 0; j < input.Value1.ColumnCount; j++)
                 {
                     output[i, j] =
                         _modulator(
-                            input.First[i, j],
-                            input.Second[i, j],
-                            input.Third[i, j]);
+                            input.Value1[i, j],
+                            input.Value2[i, j],
+                            input.Value3[i, j]);
                 }
             }
 

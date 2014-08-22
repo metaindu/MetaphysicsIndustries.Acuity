@@ -1,7 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using MetaphysicsIndustries.Collections;
+using MetaphysicsIndustries.Solus;
+
 
 namespace MetaphysicsIndustries.Acuity
 {
@@ -46,12 +47,12 @@ namespace MetaphysicsIndustries.Acuity
         //    return x;
         //}
 
-        public override Pair<Matrix> Apply2(Pair<Matrix> input)
+        public override STuple<Matrix, Matrix> Apply2(STuple<Matrix, Matrix> input)
         {
             return base.Apply2(input);
 
-            //Matrix inputReal = input.First;
-            //Matrix inputImag = input.Second;
+            //Matrix inputReal = input.Value1;
+            //Matrix inputImag = input.Value2;
             //
             //int width = inputReal.RowCount;
             //
@@ -87,8 +88,8 @@ namespace MetaphysicsIndustries.Acuity
             //
             //    for (k = 0; k < inputReal.ColumnCount; k++)
             //    {
-            //        tempReal[i, k] = tempVectors.First[k];
-            //        tempImaginary[i, k] = tempVectors.Second[k];
+            //        tempReal[i, k] = tempVectors.Value1[k];
+            //        tempImaginary[i, k] = tempVectors.Value2[k];
             //    }
             //}
             //
@@ -101,8 +102,8 @@ namespace MetaphysicsIndustries.Acuity
             //
             //    for (k = 0; k < inputReal.RowCount; k++)
             //    {
-            //        outputReal[k, j] = tempVectors.First[k];
-            //        outputImaginary[k, j] = tempVectors.Second[k];
+            //        outputReal[k, j] = tempVectors.Value1[k];
+            //        outputImaginary[k, j] = tempVectors.Value2[k];
             //    }
             //}
             //

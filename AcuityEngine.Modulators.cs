@@ -13,8 +13,9 @@
 
 using System;
 using System.Collections.Generic;
-using MetaphysicsIndustries.Collections;
+
 using System.Diagnostics;
+using MetaphysicsIndustries.Solus;
 
 namespace MetaphysicsIndustries.Acuity
 {
@@ -108,33 +109,33 @@ namespace MetaphysicsIndustries.Acuity
             return x * 2 - 1;
         }
 
-        public static Pair<float> ConvertNegOneOneToZeroOne(float x, float y)
+        public static STuple<float, float> ConvertNegOneOneToZeroOne(float x, float y)
         {
-            return new Pair<float>(
+            return new STuple<float, float>(
                 ConvertNegOneOneToZeroOne(x),
                 ConvertNegOneOneToZeroOne(y));
         }
 
-        public static Pair<float> ConvertZeroOneToNegOneOne(float x, float y)
+        public static STuple<float, float> ConvertZeroOneToNegOneOne(float x, float y)
         {
-            return new Pair<float>(
+            return new STuple<float, float>(
                 ConvertZeroOneToNegOneOne(x),
                 ConvertZeroOneToNegOneOne(y));
         }
 
-        public static Pair<float> ConvertEuclideanToPolar(float x, float y)
+        public static STuple<float, float> ConvertEuclideanToPolar(float x, float y)
         {
-            Pair<float> pair = new Pair<float>();
-            pair.First = (float)Math.Sqrt(x * x + y * y);
-            pair.Second = (float)Math.Atan2(y, x);
+            STuple<float, float> pair = new STuple<float, float>();
+            pair.Value1 = (float)Math.Sqrt(x * x + y * y);
+            pair.Value2 = (float)Math.Atan2(y, x);
             return pair;
         }
 
-        public static Pair<float> ConvertPolarToEuclidean(float r, float theta)
+        public static STuple<float, float> ConvertPolarToEuclidean(float r, float theta)
         {
-            Pair<float> pair = new Pair<float>();
-            pair.First = (float)(r * Math.Cos(theta));
-            pair.Second = (float)(r * Math.Sin(theta));
+            STuple<float, float> pair = new STuple<float, float>();
+            pair.Value1 = (float)(r * Math.Cos(theta));
+            pair.Value2 = (float)(r * Math.Sin(theta));
             return pair;
         }
 
@@ -220,11 +221,11 @@ namespace MetaphysicsIndustries.Acuity
             return max;
         }
 
-        public static Triple<float> ConvertRgbToHsl(Triple<float> rgb)
+        public static STuple<float, float, float> ConvertRgbToHsl(STuple<float, float, float> rgb)
         {
-            float r = rgb.First;
-            float g = rgb.Second;
-            float b = rgb.Third;
+            float r = rgb.Value1;
+            float g = rgb.Value2;
+            float b = rgb.Value3;
 
             float h;
             float s;
@@ -232,7 +233,7 @@ namespace MetaphysicsIndustries.Acuity
 
             ConvertRgbToHsl(r, g, b, out h, out s, out l);
 
-            return new Triple<float>(h, s, l);
+            return new STuple<float, float, float>(h, s, l);
         }
 
         public static void ConvertRgbToHsl(float r, float g, float b, out float h, out float s, out float l)
@@ -256,11 +257,11 @@ namespace MetaphysicsIndustries.Acuity
             else { s = (max - min) / (2 - 2 * l); }
         }
 
-        public static Triple<float> ConvertHslToRgb(Triple<float> hsl)
+        public static STuple<float, float, float> ConvertHslToRgb(STuple<float, float, float> hsl)
         {
-            float h = hsl.First;
-            float s = hsl.Second;
-            float l = hsl.Third;
+            float h = hsl.Value1;
+            float s = hsl.Value2;
+            float l = hsl.Value3;
 
             float r;
             float g;
@@ -268,7 +269,7 @@ namespace MetaphysicsIndustries.Acuity
 
             ConvertHslToRgb(h, s, l, out r, out g, out b);
 
-            return new Triple<float>(r, g, b);
+            return new STuple<float, float, float>(r, g, b);
         }
 
         public static void ConvertHslToRgb(float h, float s, float l, out float r, out float g, out float b)

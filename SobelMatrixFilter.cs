@@ -1,7 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using MetaphysicsIndustries.Collections;
+using MetaphysicsIndustries.Solus;
+
 
 namespace MetaphysicsIndustries.Acuity
 {
@@ -15,20 +16,20 @@ namespace MetaphysicsIndustries.Acuity
 
         public static Matrix GenerateMagnitudeMap(Matrix input)
         {
-            return GenerateMaps(input, true, false).First;
+            return GenerateMaps(input, true, false).Value1;
         }
 
         public static Matrix GenerateDirectionMap(Matrix input)
         {
-            return GenerateMaps(input, false, true).Second;
+            return GenerateMaps(input, false, true).Value2;
         }
 
-        public static Pair<Matrix> GenerateMaps(Matrix input)
+        public static STuple<Matrix, Matrix> GenerateMaps(Matrix input)
         {
             return GenerateMaps(input, true, true);
         }
 
-        protected static Pair<Matrix> GenerateMaps(Matrix input, bool calcMagnitude, bool calcDirection)
+        protected static STuple<Matrix, Matrix> GenerateMaps(Matrix input, bool calcMagnitude, bool calcDirection)
         {
             Matrix x;
             Matrix y;
@@ -37,7 +38,7 @@ namespace MetaphysicsIndustries.Acuity
             return GenerateMaps(input, calcMagnitude, calcDirection, x, y);
         }
 
-        public static Pair<Matrix> GenerateMaps(Matrix input, bool calcMagnitude, bool calcDirection, Matrix x, Matrix y)
+        public static STuple<Matrix, Matrix> GenerateMaps(Matrix input, bool calcMagnitude, bool calcDirection, Matrix x, Matrix y)
         {
 
             Matrix magnitudeMap = input.CloneSize();
@@ -63,7 +64,7 @@ namespace MetaphysicsIndustries.Acuity
                 }
             }
 
-            return new Pair<Matrix>(magnitudeMap, directionMap);
+            return new STuple<Matrix, Matrix>(magnitudeMap, directionMap);
         }
 
         private static ExpandEdgeMatrixFilter _expandEdgeFilter = new ExpandEdgeMatrixFilter(1);

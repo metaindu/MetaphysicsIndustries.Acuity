@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using MetaphysicsIndustries.Solus;
-using MetaphysicsIndustries.Collections;
+
 using System.Diagnostics;
 
 namespace MetaphysicsIndustries.Acuity
@@ -229,7 +229,7 @@ namespace MetaphysicsIndustries.Acuity
         }
 
         public Matrix AdvancedConvolution(Matrix convolvee, 
-            BiModulator firstOp, BiModulator secondOp)
+            BiModulator Value1Op, BiModulator Value2Op)
         {
 
 
@@ -284,16 +284,16 @@ namespace MetaphysicsIndustries.Acuity
                             ////time = Environment.TickCount; times[7] += time - lasttime; lasttime = time;
 
                             //float expr = new FunctionCall(
-                            //    firstOp,
+                            //    Value1Op,
                             //    this[k1, k2],
                             //    convolvee[n1 - k1, n2 - k2]);
 
-                            term = secondOp(term, firstOp(this[k1, k2], convolvee[n1 - k1, n2 - k2]));
+                            term = Value2Op(term, Value1Op(this[k1, k2], convolvee[n1 - k1, n2 - k2]));
                             ////time = Environment.TickCount; times[11] += time - lasttime; lasttime = time;
                             //////expr = expr.CleanUp();
                             ////time = Environment.TickCount; times[10] += time - lasttime; lasttime = time;
                             //////expr = new FunctionCall(
-                            //////    secondOp,
+                            //////    Value2Op,
                             //////    term,
                             //////    expr);
 
@@ -308,7 +308,7 @@ namespace MetaphysicsIndustries.Acuity
                     }
 
                     //float[] terms = group.ToArray();
-                    //FunctionCall fc = new FunctionCall(secondOp, terms);
+                    //FunctionCall fc = new FunctionCall(Value2Op, terms);
                     //float expr2 = fc.CleanUp();
                     //time = Environment.TickCount; times[12] += time - lasttime; lasttime = time;
                     ret[n1, n2] = term;// fc.CleanUp();
@@ -372,14 +372,14 @@ namespace MetaphysicsIndustries.Acuity
             //////                time = Environment.TickCount; times[7] += time - lasttime; lasttime = time;
 
             //////                float expr = new FunctionCall(
-            //////                    firstOp,
+            //////                    Value1Op,
             //////                    this[k1, k2],
             //////                    convolvee[n1 - k1, n2 - k2]);
             //////            time = Environment.TickCount; times[11] += time - lasttime; lasttime = time;
             //////                expr = expr.CleanUp();
             //////            time = Environment.TickCount; times[10] += time - lasttime; lasttime = time;
             //////                expr = new FunctionCall(
-            //////                    secondOp,
+            //////                    Value2Op,
             //////                    term,
             //////                    expr);
 
@@ -392,7 +392,7 @@ namespace MetaphysicsIndustries.Acuity
             //////            }
 
             //////            float[] terms = group.ToArray();
-            //////            FunctionCall fc = new FunctionCall(secondOp, terms);
+            //////            FunctionCall fc = new FunctionCall(Value2Op, terms);
             //////            ret[n1, n2] = term;// fc.CleanUp();
             //////            time = Environment.TickCount; times[12] += time - lasttime; lasttime = time;
             //////        }
@@ -418,13 +418,13 @@ namespace MetaphysicsIndustries.Acuity
             //////            {
             //////                group.Add(
             //////                    new FunctionCall(
-            //////                    firstOp,
+            //////                    Value1Op,
             //////                    term,
             //////                    convolvee[ii, jj]));
             //////            }
             //////        }
             //////
-            //////        ret[i, j] = _engine.CleanUp(new FunctionCall(secondOp, group.ToArray()));
+            //////        ret[i, j] = _engine.CleanUp(new FunctionCall(Value2Op, group.ToArray()));
             //////    }
             //////}
 
@@ -513,7 +513,7 @@ namespace MetaphysicsIndustries.Acuity
                 {
                     if (_row < 0)
                     {
-                        //before first element
+                        //before Value1 element
                         return float.NaN;
                     }
                     else if (_column < 0)
@@ -551,7 +551,7 @@ namespace MetaphysicsIndustries.Acuity
             {
                 if (_row < 0)
                 {
-                    //before first element
+                    //before Value1 element
 
                     _row = 0;
                     _column = 0;

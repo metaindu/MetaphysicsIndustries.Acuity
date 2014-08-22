@@ -1,16 +1,17 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using MetaphysicsIndustries.Collections;
+using MetaphysicsIndustries.Solus;
+
 
 namespace MetaphysicsIndustries.Acuity
 {
     [Serializable]
     public abstract class PolarCoordinateTransformMatrixFilter : CenteredCoordinateTransformMatrixFilter
     {
-        protected override Pair<float> InternalModulate(Pair<float> pair)
+        protected override STuple<float, float> InternalModulate(STuple<float, float> pair)
         {
-            Pair<float> pair2 = AcuityEngine.ConvertEuclideanToPolar(pair.First, pair.Second);
+            STuple<float, float> pair2 = AcuityEngine.ConvertEuclideanToPolar(pair.Value1, pair.Value2);
 
             if (!CheckCoordinates(pair2))
             {
@@ -19,14 +20,14 @@ namespace MetaphysicsIndustries.Acuity
 
             pair2 = InternalModulate2(pair2);
 
-            return AcuityEngine.ConvertPolarToEuclidean(pair2.First, pair2.Second);
+            return AcuityEngine.ConvertPolarToEuclidean(pair2.Value1, pair2.Value2);
         }
 
-        protected virtual bool CheckCoordinates(Pair<float> pair)
+        protected virtual bool CheckCoordinates(STuple<float, float> pair)
         {
             return true;
         }
 
-        protected abstract Pair<float> InternalModulate2(Pair<float> pair);
+        protected abstract STuple<float, float> InternalModulate2(STuple<float, float> pair);
     }
 }
