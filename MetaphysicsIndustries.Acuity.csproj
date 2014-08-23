@@ -153,11 +153,11 @@
     </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MetaphysicsIndustries.Utilities\MetaphysicsIndustries.Utilities.csproj">
+    <ProjectReference Include="MetaphysicsIndustries.Solus\MetaphysicsIndustries.Utilities\MetaphysicsIndustries.Utilities.csproj">
       <Project>{221A3FBA-E14C-4F05-A099-42508116E910}</Project>
       <Name>MetaphysicsIndustries.Utilities</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MetaphysicsIndustries.Solus\MetaphysicsIndustries.Solus.csproj">
+    <ProjectReference Include="MetaphysicsIndustries.Solus\MetaphysicsIndustries.Solus.csproj">
       <Project>{A630057C-40CF-4DF3-BE44-FC660B3E6BA3}</Project>
       <Name>MetaphysicsIndustries.Solus</Name>
     </ProjectReference>

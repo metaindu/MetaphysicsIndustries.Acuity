@@ -1,0 +1,3 @@
+[submodule "MetaphysicsIndustries.Solus"]
+	path = MetaphysicsIndustries.Solus
+	url = https://github.com/metaindu/MetaphysicsIndustries.Solus.git
