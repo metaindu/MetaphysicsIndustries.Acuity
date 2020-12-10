@@ -12,10 +12,7 @@
  *****************************************************************************/
 
 using System;
-using System.Collections.Generic;
-
-using System.Diagnostics;
-using MetaphysicsIndustries.Utilities;
+using MetaphysicsIndustries.Solus;
 using System.Drawing;
 
 namespace MetaphysicsIndustries.Acuity
