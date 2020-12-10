@@ -5,17 +5,14 @@
  *  18 April 2009                                                            *
  *  Project: Solus, Ligra                                                    *
  *  Written by: Richard Sartor                                               *
- *  Copyright © 2009 Metaphysics Industries, Inc.                            *
+ *  Copyright (c) 2009 Metaphysics Industries, Inc.                          *
  *                                                                           *
  *  Methods for doing general calculations.                                  *
  *                                                                           *
  *****************************************************************************/
 
 using System;
-using System.Collections.Generic;
-
-using System.Diagnostics;
-using MetaphysicsIndustries.Utilities;
+using MetaphysicsIndustries.Solus;
 using System.Drawing;
 
 namespace MetaphysicsIndustries.Acuity
