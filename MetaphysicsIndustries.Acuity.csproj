@@ -35,6 +35,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MetaphysicsIndustries.Solus, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>packages\MetaphysicsIndustries.Solus.0.1.0\lib\net40\MetaphysicsIndustries.Solus.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -140,6 +144,7 @@
   <ItemGroup>
     <None Include="Acuity.cd" />
     <None Include="make-ready.sh" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -153,18 +158,4 @@
     <PostBuildEvent>
     </PostBuildEvent>
   </PropertyGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MetaphysicsIndustries.Giza\MetaphysicsIndustries.Giza.csproj">
-      <Project>{98B42ACF-8370-4428-9D41-73FF1CEFB2E4}</Project>
-      <Name>MetaphysicsIndustries.Giza</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MetaphysicsIndustries.Solus\MetaphysicsIndustries.Solus.csproj">
-      <Project>{A630057C-40CF-4DF3-BE44-FC660B3E6BA3}</Project>
-      <Name>MetaphysicsIndustries.Solus</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MetaphysicsIndustries.Utilities\MetaphysicsIndustries.Utilities.csproj">
-      <Project>{221A3FBA-E14C-4F05-A099-42508116E910}</Project>
-      <Name>MetaphysicsIndustries.Utilities</Name>
-    </ProjectReference>
-  </ItemGroup>
 </Project>
