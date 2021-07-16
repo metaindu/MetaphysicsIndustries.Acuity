@@ -143,8 +143,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Acuity.cd" />
-    <None Include="make-ready.sh" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LICENSE" />
+    <Content Include="MetaphysicsIndustries.Acuity.nuspec" />
+    <Content Include="README.md" />
+    <Content Include="release.sh" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
